@@ -1,0 +1,27 @@
+@import 'utils/variables.scss';
+@import 'utils/globalClass.scss';
+
+.home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+    &_inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    &_form {
+        padding: var(--padding);
+        width: 60%;
+        border-radius: 3rem;
+        box-shadow: 0.8rem 0.8rem 1.4rem var(--greyLight-2), -0.2rem -0.2rem 1.8rem var(--white);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5vw;
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "url": "/",
+    "front": [
+        "auth",
+        "footer"
+    ]
+}

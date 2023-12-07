@@ -1,0 +1,103 @@
+.wrapper {
+  margin-top: 90px;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+// .section {
+//   padding-top: 7rem;
+// }
+
+.title {
+  &_main {
+    font-size: var(--title);
+    font-weight: 700;
+    line-height: 125%;
+  }
+
+  &_general {
+    font-size: clamp(1.25rem, 3.5vw, 2rem);
+    line-height: 125%;
+  }
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.6rem;
+  font-weight: 500;
+
+
+  &__primary {
+    box-shadow: inset 0.2rem 0.2rem 1rem var(--primary-light), inset -0.2rem -0.2rem 1rem var(--primary-dark), 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+    color: var(--greyLight-1);
+    background: var(--primary);
+
+    &:active {
+      box-shadow: inset 0.2rem 0.2rem 1rem var(--primary-dark), inset -0.2rem -0.2rem 1rem var(--primary-light);
+    }
+  }
+
+  &__active {
+    background: lightgreen;
+    box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+  }
+
+  &__passive {
+    color: var(--greyDark);
+    box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+
+    & &:active {
+      box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2), inset -0.2rem -0.2rem 0.5rem var(--white);
+    }
+  }
+}
+
+.input_field {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &__input {
+    width: 25rem;
+    padding: 0.8rem 3.5rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2), inset -0.2rem -0.2rem 0.5rem var(--white);
+    background: none;
+    font-family: inherit;
+    color: var(--greyDark);
+
+    &:focus {
+      outline: none;
+      box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+    }
+  }
+
+  &__icon,
+  &__visible {
+    height: 1.5rem;
+    position: absolute;
+    padding: 0 1rem;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+  }
+
+  &__visible {
+    right: 0;
+    height: 1.2rem;
+  }
+}

@@ -1,0 +1,68 @@
+@import 'utils/variables.scss';
+
+.database_info {
+    border-radius: 1rem;
+    box-shadow: 0.8rem 0.8rem 1.4rem var(--greyLight-2), -0.2rem -0.2rem 1.8rem var(--white);
+    background: var(--greyLight-3);
+    padding: 1vw;
+    margin-bottom: 1.5vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.test-container {
+    position: relative;
+    padding: 1rem 1rem 3rem;
+    margin-bottom: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+.pagination-container {
+    width: calc(100% - 2rem);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: -32px;
+    padding: 0.5rem 0;
+    justify-content: center;
+    background: var(--btn_gradient);
+    border-radius: var(--borderR);
+
+    span {
+        color: black;
+    }
+}
+
+.pagination-number,
+.pagination-button {
+    background-color: transparent;
+    border: none;
+    margin: 0.25rem 0.25rem;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: transparent;
+    transition: .5s;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all ease-in-out 0.35s;
+    border-radius: .2rem;
+}
+
+.pagination-number:hover,
+.pagination-button:not(.disabled):hover {
+    background: var(--noble_black);
+}
+
+.pagination-number.active {
+    color: #fff;
+    background: var(--noble_black);
+}

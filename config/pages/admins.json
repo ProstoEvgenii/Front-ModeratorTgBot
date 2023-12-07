@@ -1,0 +1,8 @@
+{
+    "url": "/admins",
+    "front": [
+        "header",
+        "admins",
+        "footer"
+    ]
+}

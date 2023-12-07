@@ -1,0 +1,33 @@
+:root {
+  --primary-light: #8abdff;
+  --primary: #6d5dfc;
+  --primary-dark: #5b0eeb;
+  --white: #FFFFFF;
+  --greyLight-1: #E4EBF5;
+  --greyLight-2: #c8d0e7;
+  --greyLight-3: #bec8e4;
+  --greyDark: #9baacf;
+  --white: #FFFFFF;
+
+  --title: clamp(1.25rem, 3.5vw, 2.8rem);
+  --padding: 3vw;
+
+
+  --noble_black: #1D2029;
+  --lilac_lotion: #ff357f;
+  --akebi_purple: #9844b7;
+  --fiolet: #5F479B;
+  --borderR: 15px;
+  --main_gradient: linear-gradient(56.57deg, #2973ff 0%, #8846d3 45.56%, #ff22ac 65.28%);
+  --btn_gradient: linear-gradient(to right, #2C66B8, #8859EC), linear-gradient(to right, #2C66B8, #8859EC);
+}
+
+//colors
+$white: #ffffff;
+$akebi_purple: #9844b7;
+$noble_black: #1D2029;
+$summer_sky: #3bade3;
+$blue_oyster_cult: #576fe6;
+$lilac_lotion: #ff357f;
+$glass: rgba(150, 150, 150, 0.2);
+$border: rgba(150, 150, 150, 0.5);

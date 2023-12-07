@@ -1,0 +1,73 @@
+@import 'utils/variables.scss';
+@import 'utils/globalClass.scss';
+
+.history {
+  height: 70vh;
+
+  &_info {
+    border-radius: 1rem;
+    box-shadow: 0.8rem 0.8rem 1.4rem var(--greyLight-2), -0.2rem -0.2rem 1.8rem var(--white);
+    background: var(--greyLight-3);
+    padding: 2vw;
+    margin-bottom: 1.5vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5vw;
+
+    &__details {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      place-items: center;
+      gap: 1.5vw;
+    }
+
+    &__text {
+      font-size: 1.3rem;
+
+      &:first-child {
+        text-align: center;
+      }
+    }
+  }
+
+  &_filter {
+    border-radius: 1rem;
+    box-shadow: 0.8rem 0.8rem 1.4rem var(--greyLight-2), -0.2rem -0.2rem 1.8rem var(--white);
+    background: var(--greyLight-3);
+    padding: 2vw;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 1.5vw;
+
+
+    &__date {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+  }
+
+  &_table {
+    width: 100%;
+    border-collapse: collapse;
+
+
+    &-head {
+      background: var(--primary-light);
+    }
+
+    &-body {
+      border: 2px solid var(--primary-light);
+    }
+
+    &__cell {
+      padding: 1rem;
+      border: 2px solid var(--primary-light);
+      text-align: center;
+      border-right: 2;
+    }
+  }
+}
