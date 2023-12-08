@@ -22,7 +22,7 @@ const RenderTable = function ({ items }) {
               <td class="history_table__cell">{(index + 1 + (Static.currentPage - 1) * Static.limitPerPage)}</td>
               <td class="history_table__cell">{item.type}</td>
               <td class="history_table__cell">{item.content}</td>
-              <td class="history_table__cell">{item.added}</td>
+              {/* <td class="history_table__cell">{item.added}</td> */}
               <td class="history_table__cell">{item.addedBy}</td>
 
             </tr>
@@ -67,7 +67,7 @@ export default function () {
               <th class="history_table__cell">№</th>
               <th class="history_table__cell">Тип</th>
               <th class="history_table__cell">Username</th>
-              <th class="history_table__cell">Дата Добавления</th>
+              {/* <th class="history_table__cell">Дата Добавления</th> */}
               <th class="history_table__cell">Добавлена администратором</th>
 
             </tr>

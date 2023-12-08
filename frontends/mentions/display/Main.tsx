@@ -22,7 +22,7 @@ const RenderTable = function ({ items }) {
               <td class="history_table__cell">{(index + 1 + (Static.currentPage - 1) * Static.limitPerPage)}</td>
               <td class="history_table__cell">{item.type}</td>
               <td class="history_table__cell">{item.content}</td>
-              <td class="history_table__cell">{item.added}</td>
+              {/* <td class="history_table__cell">{item.added}</td> */}
               <td class="history_table__cell">{item.addedBy}</td>
             </tr>
           )
@@ -45,29 +45,7 @@ export default function () {
         </div>
       </div>
       <div class="info_send">
-        {/* <div class="input_field">
-          <input type="text" placeholder="Поиск" class="input_field__input" ref="seach"
-            oninput={(e) => {
-              if (e.target.value.length) {
-                Static.seach = e.target.value
-                Func.makeRequest()
-              }
 
-            }}
-          />
-          <div class="input_field__icon">
-            <img src={magn} alt="Поиск" />
-          </div>
-        </div> */}
-        {/* <button
-          class="btn btn__primary"
-          onclick={() => {
-            Static.seach = Ref.seach.value
-            Func.makeRequest()
-          }}
-        >
-          Найти
-        </button> */}
       </div>
       <br />
       <div class='test-container'>
@@ -77,7 +55,7 @@ export default function () {
               <th class="history_table__cell">№</th>
               <th class="history_table__cell">Тип</th>
               <th class="history_table__cell">Username</th>
-              <th class="history_table__cell">Дата Добавления</th>
+              {/* <th class="history_table__cell">Дата Добавления</th> */}
               <th class="history_table__cell">Добавлена администратором</th>
 
             </tr>
